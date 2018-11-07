@@ -29,8 +29,6 @@ class CounterContain extends React.Component {
           counter = {this.state.counter}
           like = {this.like}
           dislike = {this.dislike}
-          Geoloc = {this.Geoloc}
-          ApiMetaWeather = {this.ApiMetaWeather}
         />
       )
 

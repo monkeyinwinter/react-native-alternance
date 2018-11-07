@@ -19,6 +19,7 @@ class Test extends React.Component {
             <FlatList
               data = {flatList}
               renderItem = {({ item }) => <Text style={{ width: 200, backgroundColor: 'grey', marginBottom: 10, color: "white" }}>{ item.title }</Text>}
+              keyExtractor={item => item.title}
             />
           </View>
 

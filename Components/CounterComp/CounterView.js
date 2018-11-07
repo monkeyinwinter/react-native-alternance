@@ -23,6 +23,14 @@ class CounterView extends React.Component {
             title="ApiMetaWeather"
             onPress={() => this.props.navigation.navigate('ApiMetaWeather')}
           />
+
+          <Button
+            title="Login"
+            onPress={() => this.props.navigation.navigate('Login')}
+          />
+
+
+
           </View>
 
           <View style={CounterStyle.containGlobal}>
