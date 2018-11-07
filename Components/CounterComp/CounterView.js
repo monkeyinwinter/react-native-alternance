@@ -10,11 +10,20 @@ class CounterView extends React.Component {
       return (
 
         <View style={CounterStyle.container}>
-
+          <View style={CounterStyle.btnRow}>
           <Button
-            title="Go to Test"
+            title="Test"
             onPress={() => this.props.navigation.navigate('Test')}
           />
+          <Button
+            title="Geoloc"
+            onPress={() => this.props.navigation.navigate('Geoloc')}
+          />
+          <Button
+            title="ApiMetaWeather"
+            onPress={() => this.props.navigation.navigate('ApiMetaWeather')}
+          />
+          </View>
 
           <View style={CounterStyle.containGlobal}>
 

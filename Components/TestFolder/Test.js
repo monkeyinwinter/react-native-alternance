@@ -1,5 +1,7 @@
 import React from 'react'
-import { View, TextInput, Button, Text } from 'react-native'
+import { View, TextInput, Button, Text, FlatList } from 'react-native'
+
+import flatList from './flatList'
 
 class Test extends React.Component {
 
@@ -12,6 +14,14 @@ class Test extends React.Component {
       return (
         <View>
           <Text>blabla</Text>
+
+          <View >
+            <FlatList
+              data = {flatList}
+              renderItem = {({ item }) => <Text style={{ width: 200, backgroundColor: 'grey', marginBottom: 10, color: "white" }}>{ item.title }</Text>}
+            />
+          </View>
+
         </View>
       )
 

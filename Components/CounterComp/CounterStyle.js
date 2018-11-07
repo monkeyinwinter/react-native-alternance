@@ -5,8 +5,8 @@ import {StyleSheet} from 'react-native';
   const CounterStyle = StyleSheet.create({
     container: {
       flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
+      // justifyContent: 'center',
+      // alignItems: 'center',
       backgroundColor: '#F5FCFF',
       flexDirection: 'column',
     },
@@ -16,6 +16,7 @@ import {StyleSheet} from 'react-native';
       borderWidth: 0.5,
       borderColor: '#0101c8',
       alignItems: 'center',
+      marginTop: 100,
     },
     counter: {
       height: 40,
@@ -59,6 +60,10 @@ import {StyleSheet} from 'react-native';
       color: '#333333',
       marginBottom: 5,
     },
+    btnRow: {
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+    }
   });
 
 

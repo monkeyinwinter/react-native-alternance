@@ -25,7 +25,13 @@ class CounterContain extends React.Component {
 
       return (
 
-        <CounterView navigation = { this.props.navigation} counter = {this.state.counter} like = {this.like} dislike = {this.dislike}/>
+        <CounterView navigation = { this.props.navigation}
+          counter = {this.state.counter}
+          like = {this.like}
+          dislike = {this.dislike}
+          Geoloc = {this.Geoloc}
+          ApiMetaWeather = {this.ApiMetaWeather}
+        />
       )
 
   }
