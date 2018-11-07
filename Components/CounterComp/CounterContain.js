@@ -19,13 +19,10 @@ class CounterContain extends React.Component {
     this.setState ({counter : this.state.counter -1});
   }
 
-
-
   render() {
-
       return (
-
-        <CounterView navigation = { this.props.navigation}
+        <CounterView
+          navigation = { this.props.navigation}
           counter = {this.state.counter}
           like = {this.like}
           dislike = {this.dislike}

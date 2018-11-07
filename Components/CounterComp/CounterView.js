@@ -29,19 +29,16 @@ class CounterView extends React.Component {
             onPress={() => this.props.navigation.navigate('Login')}
           />
 
-
-
           </View>
 
           <View style={CounterStyle.containGlobal}>
-
             <View style={CounterStyle.containA}>
               <Text style={CounterStyle.counter}>{this.props.counter}</Text>
             </View>
 
             <View style={CounterStyle.containB}>
               <Button onPress={this.props.like} title="like" color="green"/>
-              <Button onPress={this.props.dislike} title="dislike"color="red"/>
+              <Button onPress={this.props.dislike} title="dislike" color="red"/>
             </View>
 
           </View>

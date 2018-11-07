@@ -5,11 +5,11 @@ import Test from '../Components/TestFolder/Test'
 import Geoloc from '../Components/GeolocFolder/GeolocContain'
 import ApiMetaWeather from '../Components/ApiMetaWeatherFolder/ApiMetaWeather'
 import Login from '../Components/AuthFolder/Login'
-import Secured from '../Components/AuthFolder/Secured'
+import BadLogin from '../Components/AuthFolder/BadLogin'
 
 const SearchStackNavigator = createStackNavigator({
 
-  Search: {
+  CounterContain: {
     screen: CounterContain,
     navigationOptions: {
       title: 'Counter'
@@ -42,14 +42,15 @@ const SearchStackNavigator = createStackNavigator({
     navigationOptions: {
       title: 'Login'
     }
+  },
+
+  BadLogin: {
+    screen: BadLogin,
+    navigationOptions: {
+      title: 'BadLogin'
+    }
   }
 
-  // Secured: {
-  //   screen: Secured,
-  //   navigationOptions: {
-  //     title: 'Secured'
-  //   }
-  // }
 
 })
 
