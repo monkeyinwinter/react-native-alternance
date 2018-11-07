@@ -41,7 +41,7 @@ export default class ApiMetaWeather extends React.Component {
         <FlatList
           data={this.state.dataSource}
           renderItem={({item}) => <Text>{item.title}, {item.latt_long}</Text>}
-          keyExtractor={({id}, index) => id}
+          keyExtractor={item => item.title}
         />
       </View>
     );
