@@ -6,6 +6,7 @@ import Geoloc from '../Components/GeolocFolder/GeolocContain'
 import ApiMetaWeather from '../Components/ApiMetaWeatherFolder/ApiMetaWeather'
 import Login from '../Components/AuthFolder/Login'
 import BadLogin from '../Components/AuthFolder/BadLogin'
+import Promise from '../Components/PromiseFolder/Promise'
 
 const SearchStackNavigator = createStackNavigator({
 
@@ -48,6 +49,13 @@ const SearchStackNavigator = createStackNavigator({
     screen: BadLogin,
     navigationOptions: {
       title: 'BadLogin'
+    }
+  },
+
+  Promise: {
+    screen: Promise,
+    navigationOptions: {
+      title: 'Promise'
     }
   }
 

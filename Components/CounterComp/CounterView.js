@@ -29,6 +29,11 @@ class CounterView extends React.Component {
             onPress={() => this.props.navigation.navigate('Login')}
           />
 
+          <Button
+            title="Promise"
+            onPress={() => this.props.navigation.navigate('Promise')}
+          />
+
           </View>
 
           <View style={CounterStyle.containGlobal}>
