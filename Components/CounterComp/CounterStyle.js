@@ -5,8 +5,6 @@ import {StyleSheet} from 'react-native';
   const CounterStyle = StyleSheet.create({
     container: {
       flex: 1,
-      // justifyContent: 'center',
-      // alignItems: 'center',
       backgroundColor: '#F5FCFF',
       flexDirection: 'column',
     },
@@ -61,9 +59,12 @@ import {StyleSheet} from 'react-native';
       marginBottom: 5,
     },
     btnRow: {
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-    }
+      flexDirection: 'column',
+      padding: 5,
+    },
+    marge: {
+      height: 2,
+    },
   });
 
 

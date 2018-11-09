@@ -5,34 +5,46 @@ import CounterStyle from './CounterStyle'
 
 class CounterView extends React.Component {
 
-
   render() {
       return (
 
         <View style={CounterStyle.container}>
           <View style={CounterStyle.btnRow}>
-          <Button
-            title="Test"
-            onPress={() => this.props.navigation.navigate('Test')}
-          />
-          <Button
-            title="Geoloc"
-            onPress={() => this.props.navigation.navigate('Geoloc')}
-          />
-          <Button
-            title="ApiMetaWeather"
-            onPress={() => this.props.navigation.navigate('ApiMetaWeather')}
-          />
 
-          <Button
-            title="Login"
-            onPress={() => this.props.navigation.navigate('Login')}
-          />
+            <Button
+              title="Test"
+              onPress={() => this.props.navigation.navigate('Test')}
+            />
 
-          <Button
-            title="Promise"
-            onPress={() => this.props.navigation.navigate('Promise')}
-          />
+            <View style={CounterStyle.marge}></View>
+            <Button
+              title="Geoloc"
+              onPress={() => this.props.navigation.navigate('Geoloc')}
+            />
+
+            <View style={CounterStyle.marge}></View>
+            <Button
+              title="ApiMetaWeather"
+              onPress={() => this.props.navigation.navigate('ApiMetaWeather')}
+            />
+
+            <View style={CounterStyle.marge}></View>
+            <Button
+              title="Login"
+              onPress={() => this.props.navigation.navigate('Login')}
+            />
+
+            <View style={CounterStyle.marge}></View>
+            <Button
+              title="Promise"
+              onPress={() => this.props.navigation.navigate('Promise')}
+            />
+
+            <View style={CounterStyle.marge}></View>
+            <Button
+              title="LoginApi"
+              onPress={() => this.props.navigation.navigate('LoginApi')}
+            />
 
           </View>
 

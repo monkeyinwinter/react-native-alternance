@@ -7,6 +7,8 @@ import ApiMetaWeather from '../Components/ApiMetaWeatherFolder/ApiMetaWeather'
 import Login from '../Components/AuthFolder/Login'
 import BadLogin from '../Components/AuthFolder/BadLogin'
 import Promise from '../Components/PromiseFolder/Promise'
+import LoginApi from '../Components/LoginApiFolder/LoginApi'
+import BadLoginApi from '../Components/LoginApiFolder/BadLoginApi'
 
 const SearchStackNavigator = createStackNavigator({
 
@@ -57,8 +59,21 @@ const SearchStackNavigator = createStackNavigator({
     navigationOptions: {
       title: 'Promise'
     }
-  }
+  },
 
+  LoginApi: {
+    screen: LoginApi,
+    navigationOptions: {
+      title: 'LoginApi'
+    }
+  },
+
+  BadLoginApi: {
+    screen: BadLoginApi,
+    navigationOptions: {
+      title: 'BadLoginApi'
+    }
+  }
 
 })
 

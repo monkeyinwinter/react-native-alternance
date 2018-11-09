@@ -5,18 +5,18 @@ export default class Promise extends React.Component {
 
   constructor(props){
     super(props);
-    this.state = { stars: ''};
+    this.state = { stars : ''};
   }
 
   async componentDidMount() {
-    let data = await this.fetchData();
+    data = await this.fetchData();
     this.setState ({stars : this.state.stars = data});
   }
 
   async fetchData(): Promise<void> {
-    const response = await fetch('https://api.github.com/repos/facebook/react-native')
-    const json = await response.json()
-    const stars : number = json.stargazers_count
+    response = await fetch('https://api.github.com/repos/facebook/react-native')
+    json = await response.json()
+    stars = json.stargazers_count
     return stars;
   }
 
