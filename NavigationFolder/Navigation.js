@@ -9,8 +9,16 @@ import BadLogin from '../Components/AuthFolder/BadLogin'
 import Promise from '../Components/PromiseFolder/Promise'
 import LoginApi from '../Components/LoginApiFolder/LoginApi'
 import BadLoginApi from '../Components/LoginApiFolder/BadLoginApi'
+import GoodLoginApi from '../Components/LoginApiFolder/GoodLoginApi'
 
 const SearchStackNavigator = createStackNavigator({
+
+  LoginApi: {
+    screen: LoginApi,
+    navigationOptions: {
+      title: 'LoginApi'
+    }
+  },
 
   CounterContain: {
     screen: CounterContain,
@@ -61,17 +69,24 @@ const SearchStackNavigator = createStackNavigator({
     }
   },
 
-  LoginApi: {
-    screen: LoginApi,
-    navigationOptions: {
-      title: 'LoginApi'
-    }
-  },
+  // LoginApi: {
+  //   screen: LoginApi,
+  //   navigationOptions: {
+  //     title: 'LoginApi'
+  //   }
+  // },
 
   BadLoginApi: {
     screen: BadLoginApi,
     navigationOptions: {
       title: 'BadLoginApi'
+    }
+  },
+
+  GoodLoginApi: {
+    screen: GoodLoginApi,
+    navigationOptions: {
+      title: 'GoodLoginApi'
     }
   }
 

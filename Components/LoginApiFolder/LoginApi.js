@@ -9,6 +9,7 @@ export default class LoginApi extends Component {
     this.state = {
       username: '',
       password: '',
+      token: '',
    };
   }
 
@@ -27,14 +28,18 @@ export default class LoginApi extends Component {
       .then((response) => response.json())
       .then((responseData) => {
 
+        console.log(responseData);
+        console.log(responseData.token);
         console.log(responseData.message);
         console.log(responseData.success);
 
+        this.setState ({token: this.state.token = responseData.token});
+
         if (responseData.success == true){
-          this.props.navigation.navigate('CounterContain');
+          this.props.navigation.navigate('GoodLoginApi');
         }
 
-        if (responseData.message == 'Wrong password.'){
+        if (responseData.message == 'Wrong password.' || responseData.message == 'User not found.'){
           this.props.navigation.navigate('BadLoginApi');
         }
 
@@ -48,6 +53,7 @@ export default class LoginApi extends Component {
       <ScrollView style={{padding: 20}}>
         <Text>test username => {this.state.username}</Text>
         <Text>test password => {this.state.password}</Text>
+        <Text>test token => {this.state.token}</Text>
 
         <Text style={{fontSize: 27}}> Login </Text>
         <TextInput placeholder='username' onChangeText = {(username) => this.setState({username})} value={this.state.username}/>
